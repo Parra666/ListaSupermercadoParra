@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppToDoList.MainPage">
+
+    <ContentPage.ToolbarItems >
+        <ToolbarItem Text="Listagem de Compras" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Margin="10,10,10,10" BackgroundColor="White">
+        <Label Text="Nome" TextColor="Black" FontSize="Body" FontFamily="Blaka-Regular"/>
+        <Entry x:Name="txt_nome" />
+
+        <Label Text="Preço" TextColor="Black" FontSize="Body"/>
+        <Entry x:Name="txt_preco" Keyboard="Numeric"/>
+
+        <Label Text="Data" TextColor="Black" FontSize="Body" />
+        <DatePicker x:Name="dtpck_data_criacao" />
+
+        <Button Text="Salvar" TextColor="White" Clicked="Button_Clicked" BackgroundColor="Red"/>
+
+       
+    </StackLayout>
+
+</ContentPage>
